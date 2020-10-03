@@ -1,4 +1,4 @@
-{% set version = "1.0-9" %}
+{% set version = "1.0-10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spray_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spray/spray_{{ version }}.tar.gz
-  sha256: 03238c844b3260c9188aaac2a5b2dfddc3575197f4856ab8f44f704d9a3c891b
+  sha256: c384fa983176be8854ff35835297b0b8f0ed625cb5552f9b1b3627503d01e7c7
 
 build:
   merge_build_host: true  # [win]
@@ -34,12 +34,14 @@ requirements:
     - r-base
     - r-rcpp >=0.12.3
     - r-magic
+    - r-mathjaxr
     - r-partitions
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.12.3
     - r-magic
+    - r-mathjaxr
     - r-partitions
 
 test:
@@ -49,7 +51,7 @@ test:
 
 about:
   home: https://github.com/RobinHankin/spray.git
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Sparse arrays interpreted as multivariate polynomials.
   license_family: GPL2
   license_file:
