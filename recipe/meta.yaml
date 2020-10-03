@@ -34,12 +34,14 @@ requirements:
     - r-base
     - r-rcpp >=0.12.3
     - r-magic
+    - r-mathjaxr
     - r-partitions
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.12.3
     - r-magic
+    - r-mathjaxr
     - r-partitions
 
 test:
@@ -49,7 +51,7 @@ test:
 
 about:
   home: https://github.com/RobinHankin/spray.git
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Sparse arrays interpreted as multivariate polynomials.
   license_family: GPL2
   license_file:
