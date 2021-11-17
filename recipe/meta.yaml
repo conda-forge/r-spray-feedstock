@@ -30,9 +30,11 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-rcpp >=0.12.3
+    - r-disordr >=0.0_8
     - r-magic
     - r-mathjaxr
     - r-partitions
@@ -40,6 +42,7 @@ requirements:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.12.3
+    - r-disordr >=0.0_8
     - r-magic
     - r-mathjaxr
     - r-partitions
