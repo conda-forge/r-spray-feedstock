@@ -1,4 +1,4 @@
-{% set version = "1.0-11" %}
+{% set version = "1.0-16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spray_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spray/spray_{{ version }}.tar.gz
-  sha256: db509940f848eb8895a5294fdb8b02f0cdd25ca27e7e45b6dc2bafd535cce77d
+  sha256: 2bfacb4f409ae32e030fef3960fba8d9545de65c574ca294cd81ebf0775b46cb
 
 build:
   merge_build_host: true  # [win]
@@ -30,9 +30,11 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-rcpp >=0.12.3
+    - r-disordr >=0.0_8
     - r-magic
     - r-mathjaxr
     - r-partitions
@@ -40,6 +42,7 @@ requirements:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.12.3
+    - r-disordr >=0.0_8
     - r-magic
     - r-mathjaxr
     - r-partitions
