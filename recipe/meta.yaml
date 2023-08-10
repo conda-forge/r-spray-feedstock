@@ -1,4 +1,4 @@
-{% set version = "1.0-22" %}
+{% set version = "1.0-24" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spray_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spray/spray_{{ version }}.tar.gz
-  sha256: 22a3002e909a4e57215c846bd2a792260e49ba4e64a585abeef9c61a2303fbb7
+  sha256: 734e6f03b84ced14fdf99c0ecf4c440e21fcf94e485f75f4412ea7869c5a1330
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
