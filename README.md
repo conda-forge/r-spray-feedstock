@@ -3,6 +3,7 @@ About r-spray-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spray-feedstock/blob/main/LICENSE.txt)
 
+
 About r-spray
 -------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/RobinHankin/spray.git
 Package license: GPL-2.0-or-later
 
 Summary: Sparse arrays interpreted as multivariate polynomials.
+
 About r-spray
 -------------
 
