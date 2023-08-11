@@ -3,18 +3,20 @@ About r-spray-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spray-feedstock/blob/main/LICENSE.txt)
 
+
 About r-spray
 -------------
 
-Home: https://github.com/RobinHankin/spray.git
+Home: https://github.com/RobinHankin/spray
 
 Package license: GPL-2.0-or-later
 
 Summary: Sparse arrays interpreted as multivariate polynomials.
+
 About r-spray
 -------------
 
-Home: https://github.com/RobinHankin/spray.git
+Home: https://github.com/RobinHankin/spray
 
 Package license: GPL-2.0-or-later
 
@@ -63,13 +65,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7873&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spray-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7873&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spray-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
