@@ -1,18 +1,18 @@
-{% set version = "1.0-27" %}
+{% set version = "1.1-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-spray
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/spray_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spray/spray_{{ version }}.tar.gz
-  sha256: 7a23316d904d0ee37feb066121b5eb48c500aeceb76af1fac143ff2779fd0025
+  sha256: a5599f5ffd01adf8e127dcdc81691d5986fe50ea653eec7e6524fb9c526cf3d2
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,9 +56,12 @@ test:
     - "\"%R%\" -e \"library('spray')\""  # [win]
 
 about:
-  home: https://github.com/RobinHankin/spray
+  home: https://robinhankin.github.io/spray/
+  dev_url: https://github.com/RobinHankin/spray
   license: GPL-2.0-or-later
-  summary: Sparse arrays interpreted as multivariate polynomials.
+  summary: Sparse arrays interpreted as multivariate polynomials. Uses 'disordR' discipline (Hankin,
+    2022, <doi:10.48550/ARXIV.2210.03856>).  To cite the package in publications please
+    use Hankin (2022) <doi:10.48550/ARXIV.2210.10848>.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
