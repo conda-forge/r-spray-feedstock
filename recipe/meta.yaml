@@ -3,7 +3,7 @@
 
 package:
   name: r-spray
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -56,9 +56,12 @@ test:
     - "\"%R%\" -e \"library('spray')\""  # [win]
 
 about:
-  home: https://github.com/RobinHankin/spray
+  home: https://robinhankin.github.io/spray/
+  dev_url: https://github.com/RobinHankin/spray
   license: GPL-2.0-or-later
-  summary: Sparse arrays interpreted as multivariate polynomials.
+  summary: Sparse arrays interpreted as multivariate polynomials. Uses 'disordR' discipline (Hankin,
+    2022, <doi:10.48550/ARXIV.2210.03856>).  To cite the package in publications please
+    use Hankin (2022) <doi:10.48550/ARXIV.2210.10848>.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
