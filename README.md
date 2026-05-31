@@ -7,20 +7,24 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spray-feedsto
 About r-spray
 -------------
 
-Home: https://github.com/RobinHankin/spray
+Home: https://robinhankin.github.io/spray/
 
 Package license: GPL-2.0-or-later
 
-Summary: Sparse arrays interpreted as multivariate polynomials.
+Summary: Sparse arrays interpreted as multivariate polynomials. Uses 'disordR' discipline (Hankin, 2022, <doi:10.48550/ARXIV.2210.03856>).  To cite the package in publications please use Hankin (2022) <doi:10.48550/ARXIV.2210.10848>.
+
+Development: https://github.com/RobinHankin/spray
 
 About r-spray
 -------------
 
-Home: https://github.com/RobinHankin/spray
+Home: https://robinhankin.github.io/spray/
 
 Package license: GPL-2.0-or-later
 
-Summary: Sparse arrays interpreted as multivariate polynomials.
+Summary: Sparse arrays interpreted as multivariate polynomials. Uses 'disordR' discipline (Hankin, 2022, <doi:10.48550/ARXIV.2210.03856>).  To cite the package in publications please use Hankin (2022) <doi:10.48550/ARXIV.2210.10848>.
+
+Development: https://github.com/RobinHankin/spray
 
 Current build status
 ====================
